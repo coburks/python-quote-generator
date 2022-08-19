@@ -2,6 +2,9 @@ from random import random
 import math
 
 
+print("Welcome to Quote generator!")
+
+
 quotes = [
     
 "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
@@ -18,15 +21,16 @@ quotes = [
 
 "Life is what happens when you're busy making other plans. -John Lennon"
 
+
 ]
 
-x = len(quotes)
-
-select = math.floor(random() * (len(quotes)))
-
-
 def giveQuote():
-        print(quotes[select])
-
+        while True:
+                input("Press Enter to generate a new quote!")
+                x = len(quotes)
+                select = math.floor(random() * (x))
+                print(quotes[select])
 
 giveQuote()
+
+
